@@ -6,6 +6,7 @@ import vertexai
 vertexai.init(project=PROJECT_ID, location=LOCATION, staging_bucket=STAGING_BUCKET)
 import requests
 from vertexai.preview import reasoning_engines
+from flask import Flask, request
 
 model = "gemini-1.5-pro-preview-0409"
 
