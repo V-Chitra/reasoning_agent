@@ -23,13 +23,6 @@ def get_exchange_rate(
     )
     return response.json()
 
-get_exchange_rate(currency_from="USD", currency_to="SEK")
-agent = reasoning_engines.LangchainAgent(
-    model=model,
-    tools=[get_exchange_rate],
-    agent_executor_kwargs={"return_intermediate_steps": True},
-)
-
 agent = reasoning_engines.LangchainAgent(
     model=model,
     tools=[get_exchange_rate],
