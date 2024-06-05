@@ -1,0 +1,6 @@
+google-cloud-aiplatform==1.51.0
+langchain==0.1.20
+langchain-google-vertexai==1.0.3
+cloudpickle==3.0.0
+pydantic==2.7.1
+requests==2.31.0
